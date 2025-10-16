@@ -25,11 +25,12 @@ public class Main {
      */
     public static int getNumberOfSubBreeds(String breed, BreedFetcher breedFetcher) {
         // TODO Task 3 implement this code so that it is entirely consistent with its provided documentation.
+        int num = 0;
         try {
-            return breedFetcher.getSubBreeds(breed).size();
+            num = breedFetcher.getSubBreeds(breed).size();
         }
         catch(BreedFetcher.BreedNotFoundException e) {
-            return 0;
         }
+        return num;
     }
 }
